@@ -1,4 +1,4 @@
-# Ragflow-Google-Cloud-setup
+# Ragflow-Google-Cloud-Setup
 Guide to Installing Ragflow on Google Cloud Compute Engine
 # Installing Ragflow on Google Cloud Compute Engine
 
