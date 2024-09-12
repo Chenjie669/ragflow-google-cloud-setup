@@ -1,5 +1,5 @@
-# Ragflow-Google-Cloud-Setup
-Guide to Installing Ragflow on Google Cloud Compute Engine
+# Setting Up Ragflow on Google Cloud and Running OLLama
+This guide provides step-by-step instructions for setting up Ragflow on a Google Cloud Compute Engine virtual machine (VM), and running the OLLama model, including the deployment of llama3.1:70b. By following this tutorial, you'll learn how to configure your cloud environment, install necessary dependencies like Docker, and integrate models with Ragflow. The guide is intended to streamline the process for those using cloud-based environments for local deployment of large language models.
 # Installing Ragflow on Google Cloud Compute Engine
 
 This guide walks you through the process of setting up Ragflow on a Google Cloud Compute Engine virtual machine (VM). It covers deploying the llama3.1:70b model using Ollama on the VM and configuring Ragflow to work with locally deployed models.
@@ -81,6 +81,7 @@ vm.max_map_count=262144
 Save the file:
 For nano: Press Ctrl + O to save the changes, then press Enter.
 Exit the editor by pressing Ctrl + X.
+
 2. Clone the repo
 ```bash
 git clone https://github.com/infiniflow/ragflow.git
@@ -97,6 +98,7 @@ docker logs -f ragflow-server
 ```
 ### 4. Open ragflow webpage using your vm ip
 To find your VM’s external IP address, go to the Virtual Machine Instances homepage in Google Cloud. Once you have the IP, open the Ragflow webpage by entering http://<your-vm-external-ip>:80 in your browser.
+
 ### 5. Deploy LLaMA Model with Ollama in VM
 1. Install Ollama on the VM:
 ```bash
@@ -118,14 +120,23 @@ ollama list
 ### 6. Add the Model to Ragflow
 Open the Ragflow UI:
 Access the Ragflow user interface by entering the following URL into your browser: http://<your external ip>:80.
+
 Make sure to replace <your external ip> with the actual external IP address of your VM, which you can find in the Google Cloud Console under Virtual Machine Instances.
+
 Navigate to Model Providers:
+
 Once in the UI, navigate to Model Providers. This is where you will configure the model that Ragflow will use for chat and other functions.
+
 Add the Ollama Model:
+
 In the Model Providers section, select Ollama as the provider.
+
 Enter the model name exactly as it appears from the model you downloaded (e.g., llama3.1:70b). This name must match the model you have pulled and downloaded in the Ollama container.
+
 Configure the URL:
+
 In the URL field, input the following: 
+
 ```bash
 http://<your external ip>:11434
 ```
