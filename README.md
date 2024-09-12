@@ -96,7 +96,9 @@ docker logs -f ragflow-server
 ```
 ### 4. Open ragflow webpage using your vm ip
 To find your VM’s external IP address, go to the Virtual Machine Instances homepage in Google Cloud. Once you have the IP, open the Ragflow webpage by entering 
-http://<your-vm-external-ip>:80 
+```bash
+http://<your-vm-external-ip>:80
+```
 in your browser.
 
 ### 5. Deploy LLaMA Model with Ollama in VM
