@@ -1,4 +1,4 @@
-# ragflow-google-cloud-setup
+# Ragflow-Google-Cloud-setup
 Guide to Installing Ragflow on Google Cloud Compute Engine
 # Installing Ragflow on Google Cloud Compute Engine
 
@@ -20,7 +20,7 @@ This guide walks you through the process of setting up Ragflow on a Google Cloud
 - **Configure firewall rules** to allow traffic on the necessary ports (e.g., 11434 for Ollama).
 ![Image Description](image/WechatIMG1007.jpg)
 ### 2. Install Docker on the VM
-ou can follow the official Docker installation guide for Ubuntu from this link: https://docs.docker.com/engine/install/ubuntu/
+You can follow the official Docker installation guide for Ubuntu from this link: https://docs.docker.com/engine/install/ubuntu/
 SSH into your VM and run the following commands to install Docker:
 1. Set up Docker's apt repository.
 ```bash
