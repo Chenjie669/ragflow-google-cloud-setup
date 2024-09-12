@@ -15,11 +15,16 @@ This guide walks you through the process of setting up Ragflow on a Google Cloud
 ### 1. Set Up Google Cloud Compute Engine
 
 - **Create a new VM instance** in the Google Cloud Console. Choose a machine type with the required resources (e.g., E2). It is recommended to use Linux Ubuntu as the operating system.
-![Screenshot of VM instance](image/WechatIMG1005.jpg)
-<img src="image/WechatIMG1005.jpg" alt="Description" width="400"/>
-![Image Description](image/WechatIMG1006.jpg)
+<p align="center">
+  <img src="image/WechatIMG1005.jpg" alt="Screenshot of VM instance" width="600"/>
+  <img src="image/WechatIMG1006.jpg" alt="Screenshot of VM instance" width="600"/>
+</p>
+
 - **Configure firewall rules** to allow traffic on the necessary ports (e.g., 11434 for Ollama).
-![Image Description](image/WechatIMG1007.jpg)
+
+<p align="center">
+  <img src="image/WechatIMG1007.jpg" alt="Screenshot of firewall rules" width="600"/>
+</p>
 ### 2. Install Docker on the VM
 You can follow the official Docker installation guide for Ubuntu from this link: https://docs.docker.com/engine/install/ubuntu/
 SSH into your VM and run the following commands to install Docker:
