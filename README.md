@@ -28,6 +28,7 @@ This guide walks you through the process of setting up Ragflow on a Google Cloud
 
 ### 2. Install Docker on the VM
 You can follow the official Docker installation guide for Ubuntu from this link: https://docs.docker.com/engine/install/ubuntu/
+
 SSH into your VM and run the following commands to install Docker:
 1. Set up Docker's apt repository.
 ```bash
