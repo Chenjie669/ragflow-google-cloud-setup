@@ -1,8 +1,6 @@
 # Setting Up Ragflow on Google Cloud and Running OLLama
 This guide provides step-by-step instructions for setting up Ragflow on a Google Cloud Compute Engine virtual machine (VM), and running the OLLama model, including the deployment of llama3.1:70b. By following this tutorial, you'll learn how to configure your cloud environment, install necessary dependencies like Docker, and integrate models with Ragflow. The guide is intended to streamline the process for those using cloud-based environments for local deployment of large language models.
-# Installing Ragflow on Google Cloud Compute Engine
 
-This guide walks you through the process of setting up Ragflow on a Google Cloud Compute Engine virtual machine (VM). It covers deploying the llama3.1:70b model using Ollama on the VM and configuring Ragflow to work with locally deployed models.
 
 ## Prerequisites
 
